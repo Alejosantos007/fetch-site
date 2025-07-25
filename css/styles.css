@@ -46,7 +46,7 @@
             text-align: center;
             background-color: transparent;
             border: none;
-            color: aqua;
+            color: white;
             flex: 1;
             outline: none;
             font-size: 1rem;
@@ -62,19 +62,21 @@
             cursor: pointer;
         }
 
-    #resultados {
+    .resultados {
+            width: 30%;
             background-color: #022d35;
             border: 1px solid aqua;
             border-radius: 10px;
             padding: 1rem;
             margin-bottom: 1rem;
             display: flex;
+            flex-direction: row;
             gap: 1rem;
-            align-items: center;
             box-shadow: 0 0 10px rgba(0,255,255,0.2);
+            margin: 2rem
         }
 
-    #resultados img {
+    .resultados img {
             width: 100px;
             height: 100px;
             border-radius: 10px;
