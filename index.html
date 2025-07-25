@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black;">
+<html lang="en" style="background-color: black; color: white;">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>api musica</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="titulo">
+            <p style="color: white;">BlueSound</p>
+            <picture>
+                <source media="(min-width: 640px)" srcset="img/logo.png"/>
+                <img src="img/logo.png" alt="logo">
+            </picture>
+        </div>
+        <div class="buscador">
+            <input type="text" id="busqueda" placeholder="Buscador de BlueSound">
+            <button onclick="buscarCancion()">Buscar</button>
+        </div>
+    </header>
+
+    <div id="resultados"></div>
+
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>
