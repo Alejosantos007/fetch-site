@@ -16,19 +16,21 @@ const url = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}&l
     }
 
 			/*AÑADE AL INDEX CANCIONES QUE FUERON ENCONTRADAS CON RELACION A LO BUSCADO*/
-   data.results.forEach(cancion => {
-        contenedor.innerHTML += `
-            <div class="resultados">
-                <img src="${cancion.artworkUrl100}" alt="Cover">
-                <div>
-                    <strong>${cancion.trackName}</strong><br>
-                    <em>${cancion.artistName}</em><br>
-                    <audio controls src="${cancion.previewUrl}"></audio>
+    data.results.forEach(cancion => {
+            contenedor.innerHTML += `
+            <div class="resultados-wrapper">
+                <div class="resultados">
+                    <img src="${cancion.artworkUrl100}" alt="Cover">
+                    <div>
+                        <strong>${cancion.trackName}</strong><br>
+                        <em>${cancion.artistName}</em><br>
+                        <audio controls src="${cancion.previewUrl}"></audio>
+                    </div>
                 </div>
             </div>
-        `;
-    });
-}
+            `;
+        });
+    }
 
 			/*REALIZA LA ACCION DE BUSCAR SIN NECESIDAD DE CLICKEAR EL BOTON DE BUSCAR, SOLAMENTE APRETANDO LA TECLA ENTER*/
 	document.getElementById("busqueda").addEventListener("keydown", function(e) {
