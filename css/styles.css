@@ -1,31 +1,34 @@
     *, *::before, *::after {
-            box-sizing: border-box;
-        }
+        box-sizing: border-box;
+    }
 
     body {
-            margin: 0;
-            font-family: sans-serif;
-        }
+        margin: 0;
+        font-family: sans-serif;
+    }
 
     header {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
+        background-color: rgb(6, 90, 90);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
 
-        }
+        /*MANIPULA JUNTO A LA CLASE TITULO EL '<a href="index.html>"'*/
+    a {
+        text-decoration-line: none;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
 
     .titulo {
         display: flex;
-        flex-direction: row;
-        gap: 0.2rem;
-        align-items: center;
-    }
-    .titulo:hover {
-        border-bottom: 2px solid aqua;
+        flex-flow: row wrap;
     }
 
     .titulo img {
@@ -45,7 +48,8 @@
     }
 
     .buscador input {
-        text-align: center;
+        padding-left: 1rem;
+        text-align: left;
         background-color: transparent;
         border: none;
         color: white;
@@ -65,7 +69,7 @@
     }
 
     .resultados {
-        width: 25%;
+        width: 17rem;
         background-color: #022d35;
         border: 1px solid aqua;
         border-radius: 10px;
@@ -87,5 +91,5 @@
     .resultados-wrapper {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+
 }

@@ -1,6 +1,6 @@
 async function buscarCancion() {
     const query = document.getElementById("busqueda").value;
-const url = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}&limit=5`;
+const url = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}&limit=15`;
 
 
     const res = await fetch(url);
@@ -39,8 +39,8 @@ const url = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}&l
 	}
 });
 
-/*LIMPIA EL CONTENIDO LA PAGINA SE REINICIA*/
-window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("busqueda").value = "";
-    buscarCancion();
-});
+            /*LIMPIA EL CONTENIDO LA PAGINA SE REINICIA*/
+    window.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("busqueda").value = "";
+        buscarCancion();
+    });
