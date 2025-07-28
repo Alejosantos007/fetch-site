@@ -29,6 +29,10 @@
     .titulo {
         display: flex;
         flex-flow: row wrap;
+        transition: ease 0.3s;
+    }
+    .titulo:hover {
+        transform: scale(1.1);
     }
 
     .titulo img {
@@ -70,7 +74,7 @@
 
     .resultados {
         width: 17rem;
-        background-color: #022d35;
+        background-image: url(../img/resultados-background.jpg);
         border: 1px solid aqua;
         border-radius: 10px;
         padding: 1rem;
